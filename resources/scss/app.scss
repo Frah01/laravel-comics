@@ -1,1 +1,15 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+.thumbs {
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-cont {
+    width: 25%;
+
+}
+
+.background-cards {
+    background-color: rgba(28, 28, 28, 255);
+}

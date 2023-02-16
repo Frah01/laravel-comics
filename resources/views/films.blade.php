@@ -8,12 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid background-cards">
         <div class="row">
             @foreach($cards as $film)
-            <div class="col-12 col-md-4 col-sm-6">
-                <div class="card">
-                    <img class="card-img-top img-fluid"  src="{{$film['thumb']}}" alt="{{$film['title']}}">
+            <div class="col-12 col-md-4 col-sm-6 d-flex justify-content-center g-3">
+                <div class="card bg-transparent card-cont text-center border-0 text-white">
+                    <img class="thumbs"  src="{{$film['thumb']}}" alt="{{$film['title']}}">
                     <div class="card-body">
                         <p>{{$film['title']}}</p>
                     </div>
