@@ -7,12 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container-fluid p-0">
-        <div class="row">
-            <div class="col">
-                <img class="jumbotron" src="{{Vite::asset('../resources/img/jumbotron.jpg')}}" alt="">
-            </div>
-        </div>
+    <div>
+        <img class="jumbotron" src="{{Vite::asset('../resources/img/jumbotron.jpg')}}" alt="">
     </div>
 </body>
 </html>
