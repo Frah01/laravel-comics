@@ -65,18 +65,12 @@ Route::get('/', function () {
         'periscope' => '../resources/img/footer-periscope.png',
     ];
 
-    return view('films', compact('cards', 'menu', 'icons', 'socials'));
-})->name('films');
+    return view('fumetti', compact('cards', 'menu', 'icons', 'socials'));
+})->name('fumetti');
 
 Route::get('footer', function () {
 
-    $socials = [
-        'facebook' => '../resources/img/footer-facebook.png',
-        'twitter' => '../resources/img/footer-twitter.png',
-        'youtube' => '../resources/img/footer-youtube.png',
-        'pinterest' => '../resources/img/footer-pinterest.png',
-        'periscope' => '../resources/img/footer-periscope.png',
-    ];
 
-    return view('footer', compact('socials'));
+
+    return view('footer',);
 });
