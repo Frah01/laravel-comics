@@ -3,6 +3,7 @@
 .thumbs {
     height: 200px;
     object-fit: cover;
+    object-position: top;
 }
 
 .card-cont {
@@ -37,4 +38,11 @@
 
 .merch-icons {
     width: 50px;
+}
+
+.jumbotron {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
 }

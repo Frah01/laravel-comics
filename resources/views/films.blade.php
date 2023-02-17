@@ -9,6 +9,7 @@
 </head>
 <body>
     @include('partials.header')
+    @include('partials.jumbotron')
     <div class="container-fluid background-cards">
         <div class="row">
             <div class="offset-1 col-10 d-flex justify-content-center flex-wrap flex-wrap g-3">
@@ -16,7 +17,7 @@
                 <div class="card bg-transparent card-cont text-center border-0 text-white m-2">
                     <img class="thumbs"  src="{{$film['thumb']}}" alt="{{$film['title']}}">
                     <div class="card-body">
-                        <p>{{$film['title']}}</p>
+                        <p class="fw-bold">{{$film['title']}}</p>
                     </div>
                 </div>
                 @endforeach
