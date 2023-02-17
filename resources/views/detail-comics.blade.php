@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Fumetto</title>
 </head>
 <body>
     @include('partials.header')
@@ -32,16 +32,63 @@
                 <div>  
                     <h3>Talent</h3>
                 </div>
+                <hr>
                 <div class="d-flex">
-                    <p>Art by:</p>
-                    {{-- <a href="">{{$single['artists']}}</a> --}}
+                    <div class="col-2">
+                        <p class="fw-bold">Art by:</p>
+                    </div>
+                    <div class="col-8 d-flex flex-wrap">
+                        @foreach ($single['artists'] as $artist)
+                        <p>{{$artist}}</a>    
+                        @endforeach
+                    </div>
                 </div>
-                <div>
-                    
+                <hr>
+                <div class="d-flex">
+                    <div class="col-2">
+                        <p class="fw-bold">Written by:</p>
+                    </div>
+                    <div class="col-8 d-flex flex-wrap">
+                        @foreach ($single['writers'] as $writer)
+                        <p>{{$writer}}</p>    
+                        @endforeach
+                    </div>
                 </div>
+               
+                <hr>
             </div>
             <div class="col-6" >
-
+                <div>
+                    <h3>Specs</h3>
+                </div>
+                <hr>
+                <div class="d-flex">
+                    <div class="col-2">
+                        <p >Series:</p>
+                    </div>
+                    <div class="col-8">
+                        <a  href="">{{$single['series']}}</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex">
+                    <div class="col-2">
+                        <p >U.S Price:</p>
+                    </div>
+                    <div class="col-8">
+                        <p>{{$single['price']}}</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex">
+                    <div class="col-2">
+                        <p >On Sale Date:</p>
+                    </div>
+                    <div class="col-8">
+                        <p>{{$single['sale_date']}}</a>
+                    </div>
+                </div>
+                <hr>
             </div>
         </div>
     </div>
