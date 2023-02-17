@@ -22,5 +22,25 @@ Route::get('/', function () {
     $cards = config('comics');
 
 
+
     return view('films', compact('cards'));
 })->name('films');
+
+Route::get('header', function () {
+
+    $menu = [
+
+        'Index1' => 'Characters',
+        'Index2' => 'Comics',
+        'Index3' => 'Movies',
+        'Index4' => 'TV',
+        'Index5' => 'GAMES',
+        'Index6' => 'Collectibles',
+        'Index7' => 'Videos',
+        'Index8' => 'Fans',
+        'Index9' => 'News',
+        'Index10' => 'Shop'
+    ];
+
+    return view('header', compact('menu'));
+})->name('header');

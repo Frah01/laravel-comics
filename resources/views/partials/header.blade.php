@@ -14,6 +14,14 @@
               <a class="navbar-brand" href="#">
                 <img src="{{Vite::asset('resources/img/dc-logo.png')}}" >
               </a>
+              {{-- <ul>
+                @foreach ($menu as $item)
+                <li>
+                  {{$item}}
+                </li>
+                @endforeach
+               
+              </ul> --}}
             </div>
           </nav>
     </header>

@@ -8,19 +8,21 @@
     <title>Document</title>
 </head>
 <body>
+    @include('partials.header')
     <div class="container-fluid background-cards">
         <div class="row">
-            @foreach($cards as $film)
-            <div class="col-12 col-md-4 col-sm-6 d-flex justify-content-center g-3">
+            <div class="offset-2 col-8 d-flex flex-wrap justify-content-between g-3">
+                @foreach($cards as $film)
                 <div class="card bg-transparent card-cont text-center border-0 text-white">
                     <img class="thumbs"  src="{{$film['thumb']}}" alt="{{$film['title']}}">
                     <div class="card-body">
                         <p>{{$film['title']}}</p>
                     </div>
                 </div>
+                @endforeach
             </div>
-            @endforeach
         </div>
     </div>
+    @include('partials.footer')
 </body>
 </html>
