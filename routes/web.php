@@ -22,16 +22,16 @@ Route::get('/', function () {
     $cards = config('comics');
     $menu = [
 
-        'Index1' => 'Characters',
-        'Index2' => 'Comics',
-        'Index3' => 'Movies',
-        'Index4' => 'TV',
-        'Index5' => 'GAMES',
-        'Index6' => 'Collectibles',
-        'Index7' => 'Videos',
-        'Index8' => 'Fans',
-        'Index9' => 'News',
-        'Index10' => 'Shop'
+        'Characters',
+        'Comics',
+        'Movies',
+        'TV',
+        'GAMES',
+        'Collectibles',
+        'Videos',
+        'Fans',
+        'News',
+        'Shop'
     ];
 
     $icons = [
@@ -68,9 +68,36 @@ Route::get('/', function () {
     return view('fumetti', compact('cards', 'menu', 'icons', 'socials'));
 })->name('fumetti');
 
-Route::get('footer', function () {
+Route::get('detail-comics/{id}', function ($id) {
+    $menu = [
 
+        'Characters',
+        'Comics',
+        'Movies',
+        'TV',
+        'GAMES',
+        'Collectibles',
+        'Videos',
+        'Fans',
+        'News',
+        'Shop'
+    ];
+    $socials = [
+        'facebook' => '../resources/img/footer-facebook.png',
+        'twitter' => '../resources/img/footer-twitter.png',
+        'youtube' => '../resources/img/footer-youtube.png',
+        'pinterest' => '../resources/img/footer-pinterest.png',
+        'periscope' => '../resources/img/footer-periscope.png',
+    ];
 
+    $comicdetails = config('comics');
+    $single = null;
+    // foreach ($comicdetails as $key => $comic) {
 
-    return view('footer',);
-});
+    //     if ($id == $key) {
+    //         $single = $comic;
+    //     }
+    // }
+    $single = $comicdetails[$id];
+    return view('detail-comics', compact('single', 'menu', 'socials'));
+})->name('detail-comics');

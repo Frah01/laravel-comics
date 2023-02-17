@@ -6,11 +6,11 @@
     <div class="container-fluid background-cards">
         <div class="row">
             <div class="offset-1 col-10 d-flex justify-content-center flex-wrap flex-wrap g-3">
-                @foreach($cards as $film)
+                @foreach($cards as $key => $comic)
                 <div class="card bg-transparent card-cont text-center border-0 text-white m-2">
-                    <img class="thumbs"  src="{{$film['thumb']}}" alt="{{$film['title']}}">
+                    <img class="thumbs"  src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
                     <div class="card-body">
-                        <p class="fw-bold">{{$film['title']}}</p>
+                        <a class="fw-bold" href="{{route('detail-comics',['id' => $key])}}">{{$comic['title']}}</a>
                     </div>
                 </div>
                 @endforeach
