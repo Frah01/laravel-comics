@@ -11,9 +11,9 @@
     @include('partials.header')
     <div class="container-fluid background-cards">
         <div class="row">
-            <div class="offset-2 col-8 d-flex flex-wrap justify-content-between g-3">
+            <div class="offset-1 col-10 d-flex justify-content-center flex-wrap flex-wrap g-3">
                 @foreach($cards as $film)
-                <div class="card bg-transparent card-cont text-center border-0 text-white">
+                <div class="card bg-transparent card-cont text-center border-0 text-white m-2">
                     <img class="thumbs"  src="{{$film['thumb']}}" alt="{{$film['title']}}">
                     <div class="card-body">
                         <p>{{$film['title']}}</p>
