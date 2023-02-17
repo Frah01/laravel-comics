@@ -53,7 +53,19 @@
     object-position: top;
 }
 
-.img-adv {
-    width: 100%;
+a {
+    text-decoration: none;
+}
 
+.price-bar {
+    background-color: rgb(73, 194, 73);
+
+    h6 {
+        color: rgb(173, 253, 173);
+        margin-bottom: 0;
+    }
+}
+
+p {
+    margin-bottom: 0;
 }

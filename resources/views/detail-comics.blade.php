@@ -13,21 +13,31 @@
         <div class="row" >
             <div class="col-8">
                 <div class="d-flex justify-content-center align-items-center">  
-                    <div>
+                    <div class="p-2">
                         <img src="{{$single['thumb']}}" alt="">
                     </div>
                     <div class="mt-3 mx-2">
                         <h2 class="p-2">{{$single['title']}}</h2>
-                        <h5 class="p-2">U.S PRICE {{$single['price']}}</h5>
-                        <p class="p-2">{{$single['description']}}</p>
+                        <div class="price-bar d-flex justify-content-between align-items-center p-2 border">
+                            <div class="d-flex align-items-center">
+                                <h6 class="p-2">U.S PRICE </h6>
+                                <span class="fw-bold text-white">{{$single['price']}}</span>
+                            </div>
+                            <div>
+                                <h6 class="mx-3">Available</h6>
+                            </div>
+                        </div>
+                        <p class="p-2 fw-semibold">{{$single['description']}}</p>
                     </div>
                 </div> 
             </div>
             <div class="col-4">
-                <img class="img-adv" src="{{Vite::asset('../resources/img/adv.jpg')}}" alt="">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <img class="img-adv" src="{{Vite::asset('../resources/img/adv.jpg')}}" alt="">
+                </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row fw-semibold mt-5">
             <div class="col-6" >
                 <div>  
                     <h3>Talent</h3>
@@ -39,7 +49,7 @@
                     </div>
                     <div class="col-8 d-flex flex-wrap">
                         @foreach ($single['artists'] as $artist)
-                        <p>{{$artist}}</a>    
+                        <p>{{$artist}},</a>    
                         @endforeach
                     </div>
                 </div>
@@ -50,7 +60,7 @@
                     </div>
                     <div class="col-8 d-flex flex-wrap">
                         @foreach ($single['writers'] as $writer)
-                        <p>{{$writer}}</p>    
+                        <p>{{$writer}},</p>    
                         @endforeach
                     </div>
                 </div>
