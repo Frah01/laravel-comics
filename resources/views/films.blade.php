@@ -33,7 +33,7 @@
     <div class="container-fluid bg-primary">
         <div class="row">
             <div class="offset-2 col-8">
-                <ul class="d-flex list-unstyled justify-content-between py-5 text-light ">
+                <ul class="d-flex flex-wrap list-unstyled justify-content-between py-5 text-light ">
                     @foreach ($icons as $icon)
                     <li class="d-flex align-items-center fw-bold">
                         <div>
@@ -41,7 +41,6 @@
                         </div>
                         <p class="my-0 mx-2">{{$icon['nome']}}</p>
                     </li>
-                        
                     @endforeach
                 </ul>
             </div>

@@ -57,12 +57,26 @@ Route::get('/', function () {
         ]
     ];
 
+    $socials = [
+        'facebook' => '../resources/img/footer-facebook.png',
+        'twitter' => '../resources/img/footer-twitter.png',
+        'youtube' => '../resources/img/footer-youtube.png',
+        'pinterest' => '../resources/img/footer-pinterest.png',
+        'periscope' => '../resources/img/footer-periscope.png',
+    ];
 
-    return view('films', compact('cards', 'menu', 'icons'));
+    return view('films', compact('cards', 'menu', 'icons', 'socials'));
 })->name('films');
 
-Route::get('header', function () {
+Route::get('footer', function () {
 
+    $socials = [
+        'facebook' => '../resources/img/footer-facebook.png',
+        'twitter' => '../resources/img/footer-twitter.png',
+        'youtube' => '../resources/img/footer-youtube.png',
+        'pinterest' => '../resources/img/footer-pinterest.png',
+        'periscope' => '../resources/img/footer-periscope.png',
+    ];
 
-    return view('header');
+    return view('footer', compact('socials'));
 });
