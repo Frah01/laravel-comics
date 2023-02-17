@@ -20,14 +20,6 @@ Route::get('/', function () {
 Route::get('/', function () {
 
     $cards = config('comics');
-
-
-
-    return view('films', compact('cards'));
-})->name('films');
-
-Route::get('header', function () {
-
     $menu = [
 
         'Index1' => 'Characters',
@@ -42,5 +34,12 @@ Route::get('header', function () {
         'Index10' => 'Shop'
     ];
 
-    return view('header', compact('menu'));
-})->name('header');
+
+    return view('films', compact('cards', 'menu'));
+})->name('films');
+
+Route::get('header', function () {
+
+
+    return view('header');
+});
