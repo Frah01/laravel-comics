@@ -34,8 +34,31 @@ Route::get('/', function () {
         'Index10' => 'Shop'
     ];
 
+    $icons = [
+        [
+            'nome' => 'Digital Comics',
+            'img' => '../resources/img/buy-comics-digital-comics.png'
+        ],
+        [
+            'nome' => 'DC Merchandise',
+            'img' => '../resources/img/buy-comics-merchandise.png'
+        ],
+        [
+            'nome' => 'Subscription',
+            'img' => '../resources/img/buy-comics-subscriptions.png'
+        ],
+        [
+            'nome' => 'Comic Shop Locator',
+            'img' => '../resources/img/buy-comics-shop-locator.png'
+        ],
+        [
+            'nome' => 'CD Power Visa',
+            'img' => '../resources/img/buy-dc-power-visa.svg'
+        ]
+    ];
 
-    return view('films', compact('cards', 'menu'));
+
+    return view('films', compact('cards', 'menu', 'icons'));
 })->name('films');
 
 Route::get('header', function () {

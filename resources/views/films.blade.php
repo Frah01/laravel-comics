@@ -29,23 +29,23 @@
                 </div>
             </div>
         </div>
-        {{-- <div class="container">
-            <div class="row">
-                <div class="col">
-                    <ul class="d-flex list-unstyled justify-content-between py-5 text-light">
-                        @foreach ($icons as $icon)
-                        <li>
-                            <div>
-                                <img src="{{asset(Vite::asset($icon['img']))}}" alt="{{$icon['nome']}}">
-                            </div>
-                            <p>{{$icon['nome']}}</p>
-                        </li>
-                            
-                        @endforeach
-                    </ul>
-                </div>
+    </div>
+    <div class="container-fluid bg-primary">
+        <div class="row">
+            <div class="offset-2 col-8">
+                <ul class="d-flex list-unstyled justify-content-between py-5 text-light ">
+                    @foreach ($icons as $icon)
+                    <li class="d-flex align-items-center fw-bold">
+                        <div>
+                            <img class="merch-icons" src="{{asset(Vite::asset($icon['img']))}}" alt="{{$icon['nome']}}">
+                        </div>
+                        <p class="my-0 mx-2">{{$icon['nome']}}</p>
+                    </li>
+                        
+                    @endforeach
+                </ul>
             </div>
-        </div> --}}
+        </div>
     </div>
     @include('partials.footer')
 </body>
