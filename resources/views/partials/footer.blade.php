@@ -24,8 +24,8 @@
                     <button class="footer-button text-white" >SING-UP NOW!</button>
                 </div>
                 <div>
-                    <ul class="footer-list text-white d-flex align-items-center">
-                        <h4 class="text-uppercase">follow us</h4>
+                    <ul class="footer-list text-white d-flex align-items-center m-0">
+                        <h4 class="text-uppercase m-0">follow us</h4>
                         @foreach ($socials as $social)
                         <li class="mx-1">
                             <img src="{{asset(Vite::asset($social))}}" alt="">
