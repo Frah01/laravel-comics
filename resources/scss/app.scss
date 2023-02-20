@@ -20,7 +20,8 @@
     background-color: rgba(28, 28, 28, 255);
 }
 
-.sing-up-footer {
+.sing-up-footer,
+.footer-background {
     background-color: rgba(48, 48, 48, 255);
 }
 
@@ -68,4 +69,68 @@ a {
 
 p {
     margin-bottom: 0;
+}
+
+
+
+.col-50 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.col-50-dx {
+    background-repeat: no-repeat;
+    background-image: url(../assets/img/dc-logo-bg.png);
+    width: 50%;
+
+
+}
+
+.second-section-footer .col-50 {
+    align-items: center;
+}
+
+.list {
+    list-style-type: none;
+    color: white;
+    margin-right: 20px;
+    margin-top: 20px;
+    line-height: 35px;
+    font-size: 13px;
+
+    h2 {
+        color: white
+    }
+}
+
+footer {
+    background-image: url(../img/footer-bg.jpg);
+    object-fit: cover;
+}
+
+.second-section-footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(48, 48, 48, 255);
+}
+
+
+.content-second-section-footer {
+    display: flex;
+    align-items: center;
+
+    h3 {
+        color: rgba(5, 123, 215, 255);
+        margin: 0px 10px;
+    }
+
+    img {
+        margin: 0px 10px;
+    }
+}
+
+.img-dc-logo {
+    background-image: url(../img/dc-logo-bg.png);
 }
