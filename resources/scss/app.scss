@@ -54,7 +54,16 @@
     object-position: top;
 }
 
-a {
+.card-body a {
+    text-decoration: none;
+    color: white;
+
+    a:hover {
+        color: blue;
+    }
+}
+
+.thumb-color {
     text-decoration: none;
 }
 

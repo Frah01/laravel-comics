@@ -13,11 +13,11 @@
         <div class="row" >
             <div class="col-8">
                 <div class="d-flex justify-content-center align-items-center">  
-                    <div class="p-2">
+                    <div class="p-2 ">
                         <img src="{{$single['thumb']}}" alt="">
                     </div>
                     <div class="mt-3 mx-2">
-                        <h2 class="p-2">{{$single['title']}}</h2>
+                        <h2 class="p-2 ">{{$single['title']}}</h2>
                         <div class="price-bar d-flex justify-content-between align-items-center p-2 border">
                             <div class="d-flex align-items-center">
                                 <h6 class="p-2">U.S PRICE </h6>
@@ -77,7 +77,7 @@
                         <p >Series:</p>
                     </div>
                     <div class="col-8">
-                        <a  href="">{{$single['series']}}</a>
+                        <a class="thumb-color"  href="">{{$single['series']}}</a>
                     </div>
                 </div>
                 <hr>

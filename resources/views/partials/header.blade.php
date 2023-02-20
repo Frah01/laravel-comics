@@ -14,8 +14,8 @@
           <div class="row">
             <div class="col">
               <div class="d-flex justify-content-end ">
-                <p class="text-white   mx-2 text-uppercase">dc power visa</p>
-                <p class="text-white   text-uppercase">additional dc sites</p>
+                <p class="text-white mx-2 text-uppercase">dc power visa</p>
+                <p class="text-white text-uppercase">additional dc sites</p>
               </div>
             </div>
           </div>
@@ -29,7 +29,7 @@
               </a>
               <ul class="list-unstyled d-flex flex-wrap">
                 @foreach ($menu as $item)
-                <li class="mx-2 text-uppercase fw-bold">
+                <li class="mx-2 text-uppercase fw-semibold">
                   {{$item}}
                 </li>
                 @endforeach

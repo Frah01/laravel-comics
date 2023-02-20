@@ -11,7 +11,7 @@
 <footer class="footer-background">
     <div class="container " >
         <div class="col-50" >
-          <ul class="list p-0">
+          <ul class="list p-0 fw-semibold">
             <li>
               <h2>DC COMICS</h2>
             </li>
@@ -46,7 +46,7 @@
               Shop DC Collectibles
             </li>
           </ul>
-          <ul class="list">
+          <ul class="list fw-semibold">
             <li>
               <h2>DC</h2>
             </li>
@@ -107,7 +107,7 @@
         </div>
         <div class="col-50-dx">
           <div class="" >
-            <img src="(./img/dc-logo-bg.png" alt="">
+      
           </div>
         </div>
     </div>
@@ -122,7 +122,7 @@
                 </div>
                 <div>
                     <ul class="footer-list text-white d-flex align-items-center m-0">
-                        <h4 class="text-uppercase m-0">follow us</h4>
+                        <h4 class="text-uppercase m-0 mx-2">follow us</h4>
                         @foreach ($socials as $social)
                         <li class="mx-1">
                             <img src="{{asset(Vite::asset($social))}}" alt="">
