@@ -14,10 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/', function () {
 
     $cards = config('comics');
     $menu = [
@@ -65,8 +61,8 @@ Route::get('/', function () {
         'periscope' => '../resources/img/footer-periscope.png',
     ];
 
-    return view('fumetti', compact('cards', 'menu', 'icons', 'socials'));
-})->name('fumetti');
+    return view('home', compact('cards', 'menu', 'icons', 'socials'));
+})->name('home');
 
 Route::get('detail-comics/{id}', function ($id) {
     $menu = [
