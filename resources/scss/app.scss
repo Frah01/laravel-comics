@@ -145,3 +145,47 @@ footer {
 .img-dc-logo {
     background-image: url(../img/dc-logo-bg.png);
 }
+
+
+.search-box {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+.input-search {
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    padding-right: 40px;
+
+}
+
+.input-search::placeholder {
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+
+
+.btn-search~.input-search {
+    width: 300px;
+    border-radius: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+
+
+}
+
+.input-search {
+    width: 300px;
+    border-radius: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+
+}

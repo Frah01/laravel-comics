@@ -34,6 +34,9 @@
                 </li>
                 @endforeach
               </ul>
+              <div class="search-box">
+                <input type="text" class="input-search" placeholder="Search...">
+              </div>
             </div>
           </nav>
     </header>
