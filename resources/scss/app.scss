@@ -116,8 +116,10 @@ p {
 
 footer {
     background-image: url(../img/footer-bg.jpg);
-    object-fit: cover;
+    background-size: cover;
 }
+
+
 
 .second-section-footer {
     display: flex;
