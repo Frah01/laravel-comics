@@ -49,7 +49,7 @@
                     </div>
                     <div class="col-8 d-flex flex-wrap">
                         @foreach ($single['artists'] as $artist)
-                        <p>{{$artist}},</a>    
+                        <p>{{$artist}}</a>    
                         @endforeach
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                     </div>
                     <div class="col-8 d-flex flex-wrap">
                         @foreach ($single['writers'] as $writer)
-                        <p>{{$writer}},</p>    
+                        <p>{{$writer}}</p>    
                         @endforeach
                     </div>
                 </div>
